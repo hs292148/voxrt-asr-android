@@ -1,0 +1,17 @@
+# JitPack build configuration for voxrt-asr-android.
+# JitPack auto-publishes from this repo when a tag is pushed.
+# Consumers use:
+#   implementation("com.github.VoxRT:voxrt-asr-android:vX.Y.Z")
+
+jdk:
+  - openjdk17
+
+# Use the bundled Gradle wrapper. JitPack's system Gradle is 4.8.1
+# (way too old for AGP 8.5), so the wrapper is the only reliable way
+# to pin a recent Gradle (8.7 via gradle/wrapper/gradle-wrapper.properties).
+#
+# The published module name is `voxrt-asr`, NOT `voxrt-silero` — the
+# shared (Silero) jitpack.yml template targets the wrong gradle path
+# and was the cause of v0.1.0's first JitPack build failure.
+install:
+  - ./gradlew :voxrt-asr:publishToMavenLocal
