@@ -5,7 +5,7 @@ inference runtime. NeMo FastConformer (32M parameters), 16 kHz
 mono in, P&C-aware text out, cache-aware streaming with ~1.1 s
 chunks.
 
-- Current version: `v0.1.0`
+- Current version: `v0.1.1`
 - Minimum Android: API 26 (Android 8.0)
 - ABIs shipped: `arm64-v8a` (NEON-accelerated), `x86_64` (scalar, emulator only)
 - License: Apache-2.0 (Kotlin wrapper) · proprietary (compiled runtime, redistribution allowed via this artifact)
@@ -99,7 +99,7 @@ Then in your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.VoxRT:voxrt-asr-android:v0.1.0")
+    implementation("com.github.VoxRT:voxrt-asr-android:v0.1.1")
 }
 ```
 
@@ -109,10 +109,10 @@ tagged commit of this repo.
 ## Get the streaming model
 
 The model weights are NOT bundled — you fetch them once from
-[`voxrt-asr-models`](https://github.com/VoxRT/voxrt-asr-models/releases/tag/v0.1.0):
+[`voxrt-asr-models`](https://github.com/VoxRT/voxrt-asr-models/releases/tag/v0.1.1):
 
 ```
-https://github.com/VoxRT/voxrt-asr-models/releases/download/v0.1.0/streaming_medium_pc.vxrt
+https://github.com/VoxRT/voxrt-asr-models/releases/download/v0.1.1/streaming_medium_pc.vxrt
 ```
 
 SHA-256: `0d723e429157a8a8cb58739a1f090574f2f23db311ca7916b43411f5f727c79c`
@@ -326,7 +326,7 @@ streaming-medium-pc (no duration head) — passing
 
 ## Architectures roadmap
 
-`v0.1.0` ships only `arm64-v8a` for production. The `x86_64`
+`v0.1.1` ships only `arm64-v8a` for production. The `x86_64`
 slice is included so the library works on Android emulators
 (scalar code path, not NEON-optimized).
 
